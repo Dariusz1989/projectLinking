@@ -1,0 +1,34 @@
+Apps
+├──networkLibSrc
+│   ├── CMakeLists.txt
+│   ├── lib
+│       └── someFolder
+│           └── coreLib.h
+│           └── coreLib.cpp
+│       └── someFolderB
+│           └── coreLib.h
+│           └── coreLib.cpp
+├──dataLibSrc
+│   ├── CMakeLists.txt
+│   ├── lib
+│       └── someFolder
+│           └── dataLib.h
+│           └── dataLib.cpp
+├──mathLibSrc
+│   ├── CMakeLists.txt
+│   ├── lib
+│       └── someFolder
+│           └── someClass.h
+│           └── someClass.cpp
+├──appliacationA
+│   ├── CMakeLists.txt
+│   ├── lib
+│       └── someFolder
+│           └── appA.h
+│           └── appA.cpp
+├──applicationB
+│   ├── CMakeLists.txt
+│   ├── lib
+│       └── someFolder
+│           └── appB.h
+│           └── appB.cpp
