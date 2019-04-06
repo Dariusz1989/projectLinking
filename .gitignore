@@ -1,0 +1,11 @@
+
+coreProject/.idea/*
+extraItems/.idea/*
+projectA/.idea/*
+projectB/.idea/*
+
+coreProject/cmake-build-debug/*
+extraItems/cmake-build-debug/*
+projectA/cmake-build-debug/*
+projectB/cmake-build-debug/*
+
