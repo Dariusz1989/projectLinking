@@ -1,15 +1,15 @@
-cmake_minimum_required(VERSION 3.13)
-project(projectA)
 
-set(CMAKE_CXX_STANDARD 17)
+set(INCL_DIRS 
+	"${PROJECT_SOURCE_DIR}"
+	#insert desired Qt include dirs here
+)
+set(THIRD_PARTY
+	core
+	#insert desired Qt lib names here
+)
 
-get_filename_component(coreProjectDir "${CMAKE_CURRENT_SOURCE_DIR}/.." ABSOLUTE)
-SET(coreProject ${coreProjectDir}/coreProject/)
-#add_subdirectory(${coreProject} [EXCLUDE_FROM_ALL])
-add_subdirectory(${coreProject} build)
+MakeLibTarget(projA STATIC src/treeView.cpp "${INCL_DIRS}" "${THIRD_PARTY}")
+MakeTestExeTarget(projA main.cpp)
 
-#include_directories(${coreproject})
 
-add_executable(projectA main.cpp src/treeView.cpp src/treeView.h)
-target_link_libraries(projectA PRIVATE ${coreProject})
 

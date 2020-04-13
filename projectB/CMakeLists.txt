@@ -1,6 +1,12 @@
-cmake_minimum_required(VERSION 3.13)
-project(projectB)
 
-set(CMAKE_CXX_STANDARD 17)
+set(INCL_DIRS 
+	"${PROJECT_SOURCE_DIR}"
+	#insert desired Qt include dirs here
+)
+set(THIRD_PARTY
+	projA
+	#insert desired Qt lib names here
+)
 
-add_executable(projectB main.cpp)
+MakeLibTarget(projB STATIC src/extendedTreeView.cpp "${INCL_DIRS}" "${THIRD_PARTY}")
+MakeTestExeTarget(projB main.cpp)
