@@ -47,8 +47,8 @@ macro(MakeTestExeTarget libname sources)
 endmacro()
 
 #in this order
-add_subdirectory(coreProject)
 add_subdirectory(extraItems)
+add_subdirectory(coreProject)
 add_subdirectory(projectA)
 add_subdirectory(projectB)
 
