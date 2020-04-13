@@ -31,4 +31,4 @@ set(CMAKE_CXX_STANDARD 17)
 #export(PACKAGE projecta)
 
 
-add_executable(coreProject main.cpp testClass.h testClass.cpp)
+add_executable(coreProject main.cpp icLib/testClass.h icLib/testClass.cpp icLib/icEntity/entity.cpp icLib/icEntity/entity.h ../projectB/src/extendedTreeView.cpp ../projectB/src/extendedTreeView.h)

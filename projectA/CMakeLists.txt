@@ -10,6 +10,6 @@ add_subdirectory(${coreProject} build)
 
 #include_directories(${coreproject})
 
-add_executable(projectA main.cpp)
+add_executable(projectA main.cpp src/treeView.cpp src/treeView.h)
 target_link_libraries(projectA PRIVATE ${coreProject})
 
