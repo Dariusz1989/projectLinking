@@ -1,6 +1,11 @@
-cmake_minimum_required(VERSION 3.13)
-project(extraItems)
 
-set(CMAKE_CXX_STANDARD 17)
+set(INCL_DIRS 
+	"${PROJECT_SOURCE_DIR}"
+	#insert desired Qt include dirs here
+)
+set(THIRD_PARTY 
+	#insert desired Qt lib names here
+)
 
-add_executable(extraItems main.cpp someEnums.h)
+MakeLibTarget(extra STATIC someEnums.cpp "${INCL_DIRS}" "${THIRD_PARTY}")
+MakeTestExeTarget(extra main.cpp)

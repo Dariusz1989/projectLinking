@@ -6,7 +6,7 @@
 #define PROJECTA_TREEVIEW_H
 
 #include "QTreeView"
-#include "entity.h"
+#include "coreProject/icLib/icEntity/entity.h"
 
 class treeView : public QTreeView, public entity {
     Q_OBJECT

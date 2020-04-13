@@ -15,4 +15,6 @@ enum enumText{
     enTestB
 };
 
+enumClassTest enumClassTestFunction();
+
 #endif //EXTRAITEMS_SOMEENUMS_H

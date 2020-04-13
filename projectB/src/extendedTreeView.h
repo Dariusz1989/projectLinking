@@ -5,6 +5,8 @@
 #ifndef PROJECTA_EXTENDEDTREEVIEW_H
 #define PROJECTA_EXTENDEDTREEVIEW_H
 
+#include "projectA/src/treeView.h"
+
 
 class extendedTreeView : public treeView {
     enumClassTest myClass;
