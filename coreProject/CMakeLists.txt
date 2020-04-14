@@ -7,7 +7,8 @@ set(INCL_DIRS
 	"${PROJECT_SOURCE_DIR}"
 	#insert desired Qt include dirs here
 )
-set(THIRD_PARTY 
+set(THIRD_PARTY
+	extra
 	#insert desired Qt lib names here
 		opengl32.lib
 		Qt5::Widgets
