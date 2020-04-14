@@ -5,13 +5,14 @@
 #ifndef PROJECTA_EXTENDEDTREEVIEW_H
 #define PROJECTA_EXTENDEDTREEVIEW_H
 
+#include <extraItems/someEnums.h>
 #include "projectA/src/treeView.h"
 
 
 class extendedTreeView : public treeView {
     enumClassTest myClass;
 public:
-    extendedTreeView() { myClass = enumClasstest::testA; }
+    extendedTreeView() { myClass = enumClassTest::testA; }
     ~extendedTreeView();
 };
 

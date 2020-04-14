@@ -1,7 +1,6 @@
 #include <iostream>
-#include "coreProject/testClass.h"
+#include "coreProject/icLib/testClass.h"
 #include "testClass.h"
-
 
 
 int main() {
