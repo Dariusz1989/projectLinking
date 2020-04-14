@@ -55,6 +55,7 @@ macro(MakeTestExeTarget libname sources)
     add_executable(${exename} ${sources})
 
     add_dependencies(${exename} ${libname})
+	target_link_libraries(${exename} ${libname})
 
     set_target_properties(${exename} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/lib") #?? test exe should also go there?)
     # Configure output name depending on debug mode
